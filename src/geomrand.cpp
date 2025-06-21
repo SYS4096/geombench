@@ -1,4 +1,4 @@
-#include "geomrand.h"
+#include "geombench/geomrand.h"
 
 #include <random>
 #include <benchmark/benchmark.h>
