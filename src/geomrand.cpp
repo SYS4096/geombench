@@ -14,7 +14,7 @@ double getRnd()
     return distrib(gen);
 }
 
-static glm::vec3 getPointInUnitBall()
+glm::vec3 getPointInUnitBall()
 {
     double u = static_cast<double>(rand()) / RAND_MAX; // Generate random number between 0 and 1
     double x1 = getRnd();
@@ -33,7 +33,7 @@ static glm::vec3 getPointInUnitBall()
     return {(float)(x1 * c), (float)(x2 * c), (float)(x3 * c)};
 }
 
-static glm::vec3 getPointOnUnitSphere()
+glm::vec3 getPointOnUnitSphere()
 {
     float x, y, z, d;
     do
@@ -50,7 +50,7 @@ static glm::vec3 getPointOnUnitSphere()
     return {x, y, z};
 }
 
-static void generateSpherePlanes(size_t count, bool onSphere, std::vector<glm::vec4>& planes)
+void generateSpherePlanes(size_t count, bool onSphere, std::vector<glm::vec4>& planes)
 {
     while (count--)
     {
