@@ -1,0 +1,6 @@
+build/
+*.swp
+tok.txt
+.vscode/
+wslbuild/
+
