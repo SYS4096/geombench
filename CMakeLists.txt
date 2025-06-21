@@ -6,8 +6,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED YES)
 
 include(FetchContent)
 
-set(BENCHMARK_ENABLE_TESTING off)
-
 FetchContent_Declare(
         glm
         GIT_REPOSITORY https://github.com/g-truc/glm.git
